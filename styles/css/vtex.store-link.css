@@ -1,0 +1,8 @@
+.link--subcategory-item {
+    display: inline-block!important;
+    text-decoration: none!important;
+    color: unset!important;
+    margin-left: 0.4rem!important;
+    margin-top: 0.4rem!important;
+    margin-bottom: 0.4rem!important;
+}

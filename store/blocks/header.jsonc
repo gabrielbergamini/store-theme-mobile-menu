@@ -1,0 +1,168 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop"]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://brand.vtex.com/wp-content/themes/vtex-brand/img/logo.svg",
+      "width": "80"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": [
+      "rich-text#menu-item-1",
+      "disclosure-layout#departamento1",
+      "rich-text#menu-item-2",
+      "rich-text#menu-item-3",
+      "rich-text#menu-item-4"
+    ],
+    "props": {
+      "renderingStrategy": "eager"
+    }
+    
+  },
+  "rich-text#menu-item-1": { 
+    "props": { 
+      "text": "Home",
+      "blockClass": "mobile-menu-item"
+    }
+  },
+  "rich-text#menu-item-2": { 
+    "props": { 
+      "text": "Institucional",
+      "blockClass": "mobile-menu-item"
+    }
+  },
+  "rich-text#menu-item-3": { 
+    "props": { 
+      "text": "Blog",
+      "blockClass": "mobile-menu-item"
+    }
+  },
+  "rich-text#menu-item-4": { 
+    "props": { 
+      "text": "Fale Conosco",
+      "blockClass": "mobile-menu-item"
+    }
+  },
+  "disclosure-layout#departamento1": {
+    "children": [
+      "disclosure-trigger#departamento1", "disclosure-content#departamento1-list"
+    ]
+  },
+  "disclosure-trigger#departamento1": {
+    "children": ["rich-text#departamento1"]
+  },
+  "disclosure-content#departamento1-list": {
+    "children": [
+      "rich-text#departamento1-categoria1",
+      "rich-text#departamento1-categoria2",
+      "rich-text#departamento1-categoria3",
+      "rich-text#departamento1-categoria4",
+      "link#departamento1-categoria5"
+    ]
+  },
+  "rich-text#departamento1": {
+    "props": {
+      "text": "Departamento 1",
+      "blockClass": "subcategory-item"
+    }
+  },
+  "rich-text#departamento1-categoria1": {
+    "props": {
+      "text": "Categoria 1",
+      "blockClass": "subcategory-item"
+    }
+  },
+  "rich-text#departamento1-categoria2": {
+    "props": {
+      "text": "Categoria 2",
+      "blockClass": "subcategory-item"
+    }
+  },
+  "rich-text#departamento1-categoria3": {
+    "props": {
+      "text": "Categoria 3",
+      "blockClass": "subcategory-item"
+    }
+  },
+  "rich-text#departamento1-categoria4": {
+    "props": {
+      "text": "Categoria 4",
+      "blockClass": "subcategory-item"
+    }
+  },
+  "link#departamento1-categoria5": {
+    "props": {
+      "title": "Categoria 5",
+      "href": "/uma-pagina",
+      "label": "Categoria 5 com link",
+      "blockClass": "subcategory-item"
+    }
+  }
+}

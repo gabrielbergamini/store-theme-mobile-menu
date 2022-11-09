@@ -1,0 +1,19 @@
+.container--mobile-menu-item {
+    display: block;
+    width: 100%;
+    padding-left: 0.8rem;
+    
+}
+
+.paragraph--mobile-menu-item {
+    margin-top: 0.3rem!important;
+    margin-bottom: 0.3rem!important;
+}
+
+.wrapper--subcategory-item :last-child {
+    height: unset!important;
+    margin: 0!important;
+    margin-left: 0.4rem!important;
+    margin-top: 0.3rem!important;
+    margin-bottom: 0.3rem!important;
+}
